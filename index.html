@@ -33,7 +33,7 @@
       .container {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 20px;
+        padding:  16px 20px;
       }
 
       /* Header Styles */
@@ -43,9 +43,11 @@
         width: 100%;
         z-index: 1000;
         transition: background-color 0.3s ease;
+        top: 0;
       }
 
       header.scrolled {
+        /* top:0; */
         background-color: rgba(0, 0, 0, 0.8);
       }
 
@@ -577,11 +579,27 @@
         .contract-address-container{
           width:98%
         }
+        nav .logo{
+          display: none;
+        }
+        nav{
+          padding: 0;
+        }
+        .nav-links{
+          display: flex;
+          /* border: 2px solid black; */
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        nav a{
+          padding: 16px 0;
+          font-size: .8rem;
+        }
       }
     </style>
   </head>
   <body>
-    <div> --> contract </div>
     <header>
       <nav class="container">
         <div class="logo">
