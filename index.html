@@ -5,7 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MASCOT - The Future of Memecoins</title>
+    <title>ghoulie - The Future of Memecoins</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
@@ -112,10 +112,10 @@
         left: 0;
         right: 0;
         bottom: 0;
-       background-image: url('./mascot-logo.jpeg'),
-          url('./mascot-logo1.jpeg'),
-          url('./mascot-logo2.jpeg'),
-          url('./mascot-logo3.jpeg');
+       background-image: url('./ghoulie-logo.jpeg'),
+          url('./ghoulie-logo1.jpeg'),
+          url('./ghoulie-logo2.jpeg'),
+          url('./ghoulie-logo3.jpeg');
         background-repeat: no-repeat;
         background-position: 10% 20%, 30% 70%, 70% 30%, 90% 80%;
         background-size: 200px 200px, 220px 220px, 180px 180px, 250px 250px;
@@ -240,10 +240,10 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url('./mascot-logo.jpeg'),
-          url('./mascot-logo1.jpeg'),
-          url('./mascot-logo2.jpeg'),
-          url('./mascot-logo3.jpeg');
+        background-image: url('./ghoulie-logo.jpeg'),
+          url('./ghoulie-logo1.jpeg'),
+          url('./ghoulie-logo2.jpeg'),
+          url('./ghoulie-logo3.jpeg');
         background-repeat: no-repeat;
         background-size: 50px 50px;
         opacity: 0.1;
@@ -299,14 +299,19 @@
 
       .feature-item:nth-child(1)::before {
         background-image: url('./2.jpeg');
+        background-position:top;
       }
 
       .feature-item:nth-child(2)::before {
         background-image: url('./3.jpeg');
+                background-position:top;
+
       }
 
       .feature-item:nth-child(3)::before {
         background-image: url('./4.jpeg');
+                background-position:top;
+
       }
 
       .feature-item:hover::before {
@@ -352,8 +357,8 @@
         margin-bottom: 20px;
       }
 
-      /* mascotnomics Section Styles */
-      .mascotnomics {
+      /* ghoulienomics Section Styles */
+      .ghoulienomics {
         padding: 100px 0;
         background: linear-gradient(
           45deg,
@@ -364,7 +369,7 @@
         overflow: hidden;
       }
 
-      .mascotnomics::before {
+      .ghoulienomics::before {
         content: '';
         position: absolute;
         top: 0;
@@ -373,47 +378,48 @@
         bottom: 0;
         background: url('./1.jpeg')
           no-repeat center center;
+                  background-position:top;
+
         background-size: cover;
         opacity: 0.1;
         animation: float 20s infinite alternate;
       }
 
-      .mascotnomics-content {
+      .ghoulienomics-content {
         position: relative;
         z-index: 1;
         text-align: center;
       }
 
-      .mascotnomics h2 {
+      .ghoulienomics h2 {
         font-size: 3rem;
         margin-bottom: 40px;
         color: var(--text-color);
       }
-
-      .mascotnomics-grid {
+      .ghoulienomics-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 30px;
       }
 
-      .mascotnomics-item {
+      .ghoulienomics-item {
         background-color: rgba(255, 255, 255, 0.1);
         padding: 20px;
         border-radius: 15px;
         transition: transform 0.3s ease;
       }
 
-      .mascotnomics-item:hover {
+      .ghoulienomics-item:hover {
         transform: translateY(-10px);
       }
 
-      .mascotnomics-item h3 {
+      .ghoulienomics-item h3 {
         font-size: 1.2rem;
         margin-bottom: 10px;
-        color: var(--text-color);
+        color: var(--background-color);
       }
 
-      .mascotnomics-item p {
+      .ghoulienomics-item p {
         font-size: 1rem;
         word-wrap: break-word;
       }
@@ -463,13 +469,18 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         background-color: var(--text-color);
-        color: var(--primary-color);
+        color: var(--background-color);
         border-radius: 50%;
         font-size: 1.5rem;
         transition: all 0.3s ease;
+      }
+      .community .logo{
+        padding: .7rem;
+        width: 50px;
+        height: 50px;
       }
 
       .social-icons a:hover {
@@ -523,7 +534,6 @@
         right: 5%;
         bottom: 40%;
       }
-
       /* Responsive Design */
       @media (max-width: 768px) {
         .hero h1 {
@@ -559,7 +569,7 @@
           max-width: 100%;
         }
 
-        .mascotnomics-grid {
+        .ghoulienomics-grid {
           grid-template-columns: 1fr;
         }
 
@@ -604,13 +614,13 @@
       <nav class="container">
         <div class="logo">
           <img
-            src="./mascot-logo.jpeg"
-            alt="mascot Logo"
+            src="./ghoulie-logo.jpeg"
+            alt="ghoulie Logo"
           />
         </div>
         <div class="nav-links">
           <a href="#features">Features</a>
-          <a href="#mascotnomics">mascotnomics</a>
+          <a href="#ghoulienomics">ghoulienomics</a>
           <a href="#community">Community</a>
         </div>
       </nav>
@@ -618,7 +628,7 @@
 
     <section class="hero">
       <div class="container hero-content">
-        <h1>Welcome to mascot</h1>
+        <h1>Welcome to ghoulie</h1>
         <p>The Future of Memecoins: Fun, Rewarding, and Revolutionary</p>
         <!-- <a href="#features" class="btn">Explore Features</a>
         <a href="#community" class="btn">Join Community</a> -->
@@ -640,7 +650,7 @@
           <div class="feature-content">
             <h3>Community Driven</h3>
             <p>
-              mascot is powered by its vibrant and engaged community. Join us in
+              ghoulie is powered by its vibrant and engaged community. Join us in
               shaping the future of memecoins and be part of a revolutionary
               ecosystem.
             </p>
@@ -657,7 +667,7 @@
           <div class="feature-content">
             <h3>Innovative Technology</h3>
             <p>
-              Built on cutting-edge blockchain technology, mascot ensures
+              Built on cutting-edge blockchain technology, ghoulie ensures
               unparalleled security and efficiency. Experience the future of
               digital transactions.
             </p>
@@ -674,7 +684,7 @@
           <div class="feature-content">
             <h3>Rewarding Ecosystem</h3>
             <p>
-              Participate in our ecosystem and earn rewards. mascot offers
+              Participate in our ecosystem and earn rewards. ghoulie offers
               exciting opportunities for growth and profit in the world of
               cryptocurrency.
             </p>
@@ -683,31 +693,31 @@
       </div>
     </section>
 
-    <section id="mascotnomics" class="mascotnomics">
-      <div class="container mascotnomics-content">
-        <h2>mascotnomics</h2>
-        <div class="mascotnomics-grid">
-          <div class="mascotnomics-item">
+    <section id="ghoulienomics" class="ghoulienomics">
+      <div class="container ghoulienomics-content">
+        <h2>ghoulienomics</h2>
+        <div class="ghoulienomics-grid">
+          <div class="ghoulienomics-item">
             <h3>Ticker</h3>
-            <p>$BLUP</p>
+            <p>$GLEE</p>
           </div>
-          <div class="mascotnomics-item">
+          <div class="ghoulienomics-item">
             <h3>Total Supply</h3>
-            <p>1 Billion BLUP</p>
+            <p>1 Billion GLEE</p>
           </div>
-          <div class="mascotnomics-item">
+          <div class="ghoulienomics-item">
             <h3>Taxes</h3>
             <p>0/0 Taxes</p>
           </div>
-          <div class="mascotnomics-item">
+          <div class="ghoulienomics-item">
             <h3>Contract</h3>
             <p>Renounced</p>
           </div>
-          <div class="mascotnomics-item">
+          <div class="ghoulienomics-item">
             <h3>Liquidity</h3>
             <p>Burnt</p>
           </div>
-          <div class="mascotnomics-item">
+          <div class="ghoulienomics-item">
             <h3>Launch</h3>
             <p>Fair Launch on App Store</p>
           </div>
@@ -716,9 +726,9 @@
 
     <section id="community" class="community">
       <div class="container community-content">
-        <h2>Join the mascot Community</h2>
+        <h2>Join the ghoulie Community</h2>
         <p>
-          Be part of the revolution. Connect, share, and grow with fellow mascot
+          Be part of the revolution. Connect, share, and grow with fellow ghoulie
           enthusiasts.
         </p>
         <div class="social-icons">
@@ -753,26 +763,26 @@
     <div class="sticky-photos">
       <div class="sticky-photo">
         <img
-          src="./mascot-logo.jpeg"
-          alt="mascot Mascot"
+          src="./ghoulie-logo.jpeg"
+          alt="ghoulie ghoulie"
         />
       </div>
       <div class="sticky-photo">
         <img
-          src="./mascot-logo1.jpeg"
-          alt="mascot Swirl"
+          src="./ghoulie-logo1.jpeg"
+          alt="ghoulie Swirl"
         />
       </div>
       <div class="sticky-photo">
         <img
-          src="./mascot-logo2.jpeg"
-          alt="mascot Mascot 2"
+          src="./ghoulie-logo2.jpeg"
+          alt="ghoulie ghoulie 2"
         />
       </div>
       <div class="sticky-photo">
         <img
-          src="./mascot-logo3.jpeg"
-          alt="mascot Blue Frame"
+          src="./ghoulie-logo3.jpeg"
+          alt="ghoulie Blue Frame"
         />
       </div>
     </div>
